@@ -6,8 +6,10 @@
   url("./fonts/LifeCraft_Font.ttf") format("truetype");
 }
 
-.App {
-  text-align: center;
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .logo {
@@ -15,8 +17,29 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: #61dafb;
+  font-size: 3.5rem;
+}
+.github {
+  justify-content: flex-end;
+  display: flex;
+  padding:1.5rem;
+  img {
+    height: 3rem;
+    width: 3rem;
+  }
+}
+.discord {
+  width: 18rem;
 }
 
+main.main {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex:1;
+}
 
 .App-header {
   background-color: #282c34;

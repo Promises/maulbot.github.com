@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #303030;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+$colour-red: #F86B4F;
+$colour-light-red: #FC9782;
+$colour-pink: #FFC2B5;
+$colour-orange: #FFC587;
+$colour-yellow: #FFFC66;
+$colour-dark-yellow: #EFE708;
+$colour-defuse-green: #76E09E;
+$colour-light-green: #81CB3E;
+$colour-green: #029915;
+$colour-dark-green: #478960;
+$colour-black: #000000;
+$colour-dark-blue: #003EFF;
+$colour-gray: #878787;
+a {
+  color: inherit;
+  text-decoration: inherit;
+  /*cursor: inherit;*/
+}
+
+
+
+button, input[type="submit"], input[type="reset"], a.button {
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  border: 3px solid #000000;
+  background-color: $colour-yellow;
+  padding: 1rem 1.5rem;
+  //min-height: 3rem;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  transition: background-color 0.22s, color 0.22s, fill 0.22s;
+  flex-direction: row;
+  gap: 1.5rem;
+  min-width: max-content;
+
+  &.small {
+    padding: 0.2rem;
+  }
+
+  &.green {
+    background-color: $colour-defuse-green;
+  }
+
+  &.blue {
+    background-color: $colour-dark-blue;
+    color: #fff;
+
+    path {
+      fill: #fff;
+      transition: fill 0.22s;
+
+    }
+
+    &:hover {
+      color: #000;
+
+      path {
+        fill: #000;
+      }
+    }
+  }
+
+  h1, h2, h3, h4, h5, p {
+    margin: 0;
+  }
+
+  &.highlighted {
+    background-color: $colour-dark-blue;
+  }
+
+  &:disabled, &.disabled {
+    cursor: initial;
+    background-color: #969696;
+  }
+  &.button-link {
+    background-color: unset;
+    border: none;
+    padding: 0 2rem;
+    margin: 0;
+
+    color:  #969696;
+    > * {
+      border-bottom: 2px solid #969696;
+    }
+
+    &:not(&:disabled, &.disabled, &.unstyled) {
+      color: black;
+      > * {
+        border-bottom-color: black;
+
+
+        &:hover {
+          border-bottom-color: transparent;
+        }
+      }
+    }
+    font-weight: 400;
+
+  }
+  &:not(&:disabled, &.disabled, &.unstyled, &.button-link) {
+    &:hover,
+      //&:focus,
+    &:active
+    {
+      background-color: #CAEBFD;
+    }
+  }
+
+
+}

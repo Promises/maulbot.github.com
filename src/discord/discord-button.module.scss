@@ -1,0 +1,15 @@
+.discordSVG {
+
+  .fg {
+    fill: #fff
+  }
+  .bg {
+    fill: transparent;
+    transition: fill 0.2s ease;
+  }
+  &:hover {
+    .bg {
+      fill: #2cb4ed;
+    }
+  }
+}
