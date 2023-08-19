@@ -10,9 +10,8 @@ function App() {
             </header>
             <main className={styles.main}>
                 <div>
-                    <a className={'button green'} href={'/Warcraft_Maul_Reimagined_v4.4.3.w3x'}>Download lastest version v4.4.3</a></div>
+                    <a className={'button blue'} href={'/Warcraft_Maul_Reimagined_v4.4.3.w3x'}>Download lastest version v4.4.3</a></div>
                 <div className={styles.discord}><a href={'https://discord.gg/4Ng3VgE'}><DiscordButton/></a></div>
-
 
             </main>
             <div className={styles.github}><a href={'https://github.com/Promises/Warcraft-Maul-Buildtools'}><img

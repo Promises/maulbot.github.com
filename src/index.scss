@@ -24,6 +24,7 @@ $colour-green: #029915;
 $colour-dark-green: #478960;
 $colour-black: #000000;
 $colour-dark-blue: #003EFF;
+$colour-light-blue: #4775FF;
 $colour-gray: #878787;
 a {
   color: inherit;
@@ -59,7 +60,7 @@ button, input[type="submit"], input[type="reset"], a.button {
   }
 
   &.blue {
-    background-color: $colour-dark-blue;
+    background-color: $colour-light-blue;
     color: #fff;
 
     path {
